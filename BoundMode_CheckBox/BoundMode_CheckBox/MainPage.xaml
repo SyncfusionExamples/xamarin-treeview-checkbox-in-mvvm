@@ -15,6 +15,7 @@
                          ItemsSource="{Binding Folders}"
                          ItemTemplateContextType="Node"
                          CheckBoxMode="Recursive"
+                         AutoExpandMode="RootNodesExpanded"
                          CheckedItems="{Binding CheckedItems}">
         
         <TreeView:SfTreeView.HierarchyPropertyDescriptors>

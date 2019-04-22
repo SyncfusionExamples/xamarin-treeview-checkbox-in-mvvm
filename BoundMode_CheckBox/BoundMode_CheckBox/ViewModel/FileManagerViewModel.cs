@@ -113,6 +113,11 @@ namespace BoundMode_CheckBox
 
             checkedItems = new ObservableCollection<object>();
             checkedItems.Add(doc);
+            checkedItems.Add(typeScript);
+            checkedItems.Add(uiGuide);
+            checkedItems.Add(stone);
+            checkedItems.Add(wind);
+            checkedItems.Add(song);
 
             return nodeImageInfo;
         }
