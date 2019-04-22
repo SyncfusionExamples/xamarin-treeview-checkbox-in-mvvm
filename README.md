@@ -1,2 +1,2 @@
-# checkbox_bound_mode
-Working with checkbox bound mode
+# How to use checkbox in treeview?
+This example illustrates how to use checkbox in treeview.
