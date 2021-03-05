@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="17.1.0.38" />
-    <PackageReference Include="Syncfusion.Xamarin.SfTreeView" Version="17.1.0.38" />
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.4.0.44" />
+    <PackageReference Include="Syncfusion.Xamarin.SfTreeView" Version="18.4.0.44" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
   </ItemGroup>
 </Project>
