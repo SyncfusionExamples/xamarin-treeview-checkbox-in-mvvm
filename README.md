@@ -42,34 +42,21 @@ Refer SfCheckBox control with declared suffix name for Namespace
 ```
 #   Checkbox in treeview
 **[XAML]**
-```
- <TreeView:SfTreeView x:Name="treeView"
-                         ItemsSource="{Binding Folders}"
-                         ItemTemplateContextType="Node"
-                         CheckBoxMode="Recursive"
-                         AutoExpandMode="RootNodesExpanded"
-                         CheckedItems="{Binding CheckedItems}">
-        
-        <TreeView:SfTreeView.HierarchyPropertyDescriptors>
-            <TreeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:Folder}" ChildPropertyName="Files"/>
-            <TreeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:File}" ChildPropertyName="SubFiles"/>
-        </TreeView:SfTreeView.HierarchyPropertyDescriptors>
-        
-        <TreeView:SfTreeView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <ViewCell.View>
-                        <Grid Padding="5">
-                            <SfButtons:SfCheckBox 
-                            x:Name="CheckBox"
-                            Text="{Binding Content.FileName}"
-                            IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
-                        </Grid>
-                    </ViewCell.View>
-                </ViewCell>
-            </DataTemplate>
-        </TreeView:SfTreeView.ItemTemplate>
-    </TreeView:SfTreeView>
+```      
+<TreeView:SfTreeView.ItemTemplate>
+    <DataTemplate>
+        <ViewCell>
+            <ViewCell.View>
+                <Grid Padding="5">
+                    <SfButtons:SfCheckBox 
+                        x:Name="CheckBox"
+                        Text="{Binding Content.FileName}"
+                        IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                </Grid>
+            </ViewCell.View>
+        </ViewCell>
+    </DataTemplate>
+</TreeView:SfTreeView.ItemTemplate>
 ```
 ##  ViewModel
 
